@@ -27,7 +27,6 @@ import java.util.List;
 import javax.inject.Inject;
 
 import acr.browser.lightning.BrowserApp;
-import acr.browser.lightning.BuildConfig;
 import acr.browser.lightning.R;
 import acr.browser.lightning.constant.Constants;
 import acr.browser.lightning.constant.Proxy;
@@ -171,23 +170,15 @@ public class GeneralSettingsFragment extends LightningPreferenceFragment impleme
         boolean imagesBool = mPreferenceManager.getBlockImagesEnabled();
         boolean enableJSBool = mPreferenceManager.getJavaScriptEnabled();
 
-        cbAds.setEnabled(BuildConfig.FULL_VERSION);
-
-        if (!BuildConfig.FULL_VERSION) {
-            cbAds.setSummary(R.string.upsell_plus_version);
-        }
-
-        if (API < Build.VERSION_CODES.KITKAT) {
-            cbFlash.setEnabled(true);
-        } else {
-            cbFlash.setEnabled(false);
-            cbFlash.setSummary(R.string.flash_not_supported);
-        }
+        //enable adblock
+        cbAds.setEnabled(true);
+        //disable flash support
+        cbFlash.setEnabled(false);
 
         cbImages.setChecked(imagesBool);
         cbJsScript.setChecked(enableJSBool);
         cbFlash.setChecked(flashNum > 0);
-        cbAds.setChecked(BuildConfig.FULL_VERSION && mPreferenceManager.getAdBlockEnabled());
+        cbAds.setChecked(mPreferenceManager.getAdBlockEnabled());
         cbColorMode.setChecked(mPreferenceManager.getColorModeEnabled());
     }
 

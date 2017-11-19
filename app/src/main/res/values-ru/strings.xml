@@ -238,7 +238,6 @@
     <string name="dialog_remove_from_history">Удалить из истории</string>
     <string name="dialog_rename_folder">Переименовать папку</string>
     <string name="dialog_title_close_browser">Закрыть браузер</string>
-    <string name="flash_not_supported">Flash Player не поддерживается системой</string>
     <string name="hosts_source">Файл списка заблокированной рекламы</string>
     <string name="label_realm">Серверное сообщение: %s</string>
     <string name="message_bookmark_added">Закладка добавлена</string>
@@ -249,7 +248,6 @@
     <string name="settings_black_status_bar">Тёмная строка состояния</string>
     <string name="swap_bookmarks_and_tabs">Отобразить закладки в табах</string>
     <string name="unknown_size">Неизвестный размер</string>
-    <string name="upsell_plus_version">Обновите до Lightning Plus для блокировки рекламы</string>
     <string name="search_engine_yandex">Яндекс</string>
     <string name="search_engine_yahoo">Yahoo</string>
     <string name="search_engine_startpage_mobile">StartPage Mobile</string>

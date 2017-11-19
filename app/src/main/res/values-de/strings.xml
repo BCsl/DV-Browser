@@ -246,8 +246,6 @@
     <string name="message_added_to_homescreen">Verknüpfung wurde zum Startbildschirm hinzugefügt</string>
     <string name="shortcut_message_failed_to_add">Dein Launcher unterstützt keine Verknüpfungen</string>
     <string name="action_delete_all_bookmarks">Alle Lesezeichen löschen</string>
-    <string name="flash_not_supported">Flash Player wird von deinem System nicht untertützt!</string>
-    <string name="upsell_plus_version">Upgrade auf Lightning Plus um Werbung zu blockieren!</string>
     <string name="message_open_download_fail">Diese Datei existiert nicht mehr</string>
 	
     <string name="faq">FAQ</string>

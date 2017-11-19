@@ -32,8 +32,6 @@
 	<string name="faq_description">Najczęściej zadawane pytania</string>
 	<string name="faq">FAQ</string>
 	<string name="message_open_download_fail">Ten plik już nie istnieje</string>
-	<string name="upsell_plus_version">Przejdź na Lightning Plus, aby blokować reklamy</string>
-	<string name="flash_not_supported">Twój system nie obsługuje Flash Playera</string>
 	<string name="action_delete_all_bookmarks">Usuń wszystkie zakładki</string>
 	<string name="shortcut_message_failed_to_add">Twój launcher nie obsługuje skrótów.</string>
 	<string name="message_added_to_homescreen">Dodano skrót do ekranu głównego</string>

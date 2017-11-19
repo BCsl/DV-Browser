@@ -226,8 +226,6 @@
     <string name="action_add_to_homescreen">ホーム画面に追加</string>
     <string name="message_added_to_homescreen">ホーム画面にショートカットを追加しました</string>
     <string name="action_delete_all_bookmarks">すべてのブックマークを削除する</string>
-    <string name="flash_not_supported">このシステムは Flash Player をサポートしていません</string>
-    <string name="upsell_plus_version">広告をブロックするには Lightning Plus へアップグレードしてください</string>
     <string name="message_open_download_fail">このファイルは存在しません</string>
 
     <string name="faq">FAQ</string>

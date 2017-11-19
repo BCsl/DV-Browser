@@ -1,8 +1,6 @@
 package acr.browser.lightning.browser
 
 import acr.browser.lightning.BrowserApp
-import acr.browser.lightning.BuildConfig
-import acr.browser.lightning.R
 import acr.browser.lightning.constant.FILE
 import acr.browser.lightning.constant.INTENT_ORIGIN
 import acr.browser.lightning.constant.SCHEME_BOOKMARKS
@@ -276,12 +274,6 @@ class BrowserPresenter(private val view: BrowserView, private val isIncognito: B
      * @return true if we successfully created the tab, false if we have hit max tabs.
      */
     fun newTab(url: String?, show: Boolean): Boolean {
-        // Limit number of tabs for limited version of app
-        if (!BuildConfig.FULL_VERSION && tabsModel.size() >= 10) {
-            view.showSnackbar(R.string.max_tabs)
-            return false
-        }
-
         Log.d(TAG, "New tab, show: $show")
 
         val startingTab = tabsModel.newTab(view as Activity, url, isIncognito)
