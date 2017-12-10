@@ -277,4 +277,7 @@
     </plurals>
     <string name="notification_incognito_running_message">Touch to open</string>
     <string name="notification_incognito_running_description">Ongoing incognito notification</string>
+
+    <!-- Quick Control -->
+    <string name="qc">Quick Control</string>
 </resources>

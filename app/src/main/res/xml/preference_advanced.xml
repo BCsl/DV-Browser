@@ -20,6 +20,11 @@
             android:defaultValue="true"
             android:key="restore_tabs"
             android:title="@string/restore" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="quick_control"
+            android:summary="Does not work with navigation drawer"
+            android:title="@string/qc" />
         <Preference
             android:key="text_encoding"
             android:title="@string/text_encoding" />
