@@ -138,6 +138,10 @@ abstract class BrowserActivity : ThemableBrowserActivity(), BrowserView, UIContr
     private var searchText: String? = null
     private var cameraPhotoPath: String? = null
 
+    // Quick Control Pie Menu
+    private var useQuickControl: Boolean = false
+    private lateinit var mPieLayout: RelativeLayout;
+
     // The singleton BookmarkManager
     @Inject internal lateinit var bookmarkManager: BookmarkRepository
     @Inject internal lateinit var historyModel: HistoryRepository
@@ -204,6 +208,7 @@ abstract class BrowserActivity : ThemableBrowserActivity(), BrowserView, UIContr
         BrowserApp.appComponent.inject(this)
         setContentView(R.layout.activity_main)
         ButterKnife.bind(this)
+        /**mPieLayout = findViewById(R.id.pie_layout)**/
 
         val incognitoNotification = IncognitoNotification(this)
         tabsManager.addTabNumberChangedListener {
@@ -236,10 +241,14 @@ abstract class BrowserActivity : ThemableBrowserActivity(), BrowserView, UIContr
         }
         shouldShowTabsInDrawer = preferences.getShowTabsInDrawer(!isTablet)
         swapBookmarksAndTabs = preferences.bookmarksAndTabsSwapped
+        useQuickControl = preferences.quickControl
 
         // initialize background ColorDrawable
         val primaryColor = ThemeUtils.getPrimaryColor(this)
         backgroundDrawable.color = primaryColor
+
+        // Prepare Quick Control Pie Menu
+
 
         // Drawer stutters otherwise
         left_drawer.setLayerType(View.LAYER_TYPE_NONE, null)

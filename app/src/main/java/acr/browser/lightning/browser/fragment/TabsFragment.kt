@@ -84,7 +84,7 @@ class TabsFragment : Fragment(), View.OnClickListener, View.OnLongClickListener,
             setupFrameLayoutButton(view, R.id.new_tab_button, R.id.icon_plus)
             setupFrameLayoutButton(view, R.id.action_back, R.id.icon_back)
             setupFrameLayoutButton(view, R.id.action_forward, R.id.icon_forward)
-            setupFrameLayoutButton(view, R.id.action_home, R.id.icon_home)
+            setupFrameLayoutButton(view, R.id.deleteAction, R.id.deleteButton)
         } else {
             view = inflater.inflate(R.layout.tab_strip, container, false)
             val newTab = view.findViewById<ImageView>(R.id.new_tab_button)
@@ -172,7 +172,7 @@ class TabsFragment : Fragment(), View.OnClickListener, View.OnLongClickListener,
         R.id.new_tab_button -> uiController.newTabButtonClicked()
         R.id.action_back -> uiController.onBackButtonPressed()
         R.id.action_forward -> uiController.onForwardButtonPressed()
-        R.id.action_home -> uiController.onHomeButtonPressed()
+        R.id.deleteAction -> uiController.tabCloseClicked(getTabsManager().indexOfCurrentTab())
         else -> {
         }
     }

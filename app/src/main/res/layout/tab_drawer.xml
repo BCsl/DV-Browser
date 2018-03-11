@@ -60,6 +60,40 @@
         android:weightSum="4">
 
         <FrameLayout
+            android:id="@+id/new_tab_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/actionBarItemBackground"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/icon_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@string/action_new_tab"
+                app:srcCompat="@drawable/ic_action_plus"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/deleteAction"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/actionBarItemBackground"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/deleteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@string/close_tab"
+                app:srcCompat="@drawable/ic_action_delete"/>
+        </FrameLayout>
+
+        <FrameLayout
             android:id="@+id/action_back"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -76,7 +110,7 @@
                 app:srcCompat="@drawable/ic_action_back"/>
         </FrameLayout>
 
-        <FrameLayout
+        <!--<FrameLayout
             android:id="@+id/action_home"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -91,7 +125,7 @@
                 android:layout_gravity="center"
                 android:contentDescription="@string/action_homepage"
                 app:srcCompat="@drawable/ic_action_home"/>
-        </FrameLayout>
+        </FrameLayout>-->
 
         <FrameLayout
             android:id="@+id/action_forward"
@@ -110,22 +144,7 @@
                 app:srcCompat="@drawable/ic_action_forward"/>
         </FrameLayout>
 
-        <FrameLayout
-            android:id="@+id/new_tab_button"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="?attr/actionBarItemBackground"
-            android:clickable="true">
 
-            <ImageView
-                android:id="@+id/icon_plus"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:contentDescription="@string/action_new_tab"
-                app:srcCompat="@drawable/ic_action_plus"/>
-        </FrameLayout>
     </LinearLayout>
 
 </LinearLayout>
